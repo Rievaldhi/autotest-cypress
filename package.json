@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Rievaldhi/autotest-cypress/issues"
   },
-  "homepage": "https://github.com/Rievaldhi/autotest-cypress#readme"
+  "homepage": "https://github.com/Rievaldhi/autotest-cypress#readme",
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^3.2.3"
+  }
 }
