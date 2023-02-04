@@ -1,0 +1,12 @@
+{
+    "stepDefinitions": [
+      "cypress/support/step_definitions/**/*"
+    ],
+
+    "json": {
+        "enabled": true
+    }
+
+}
+
+  
