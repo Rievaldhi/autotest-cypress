@@ -4,6 +4,19 @@ const addCucumberPreprocessorPlugin = require("@badeball/cypress-cucumber-prepro
 const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
 module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
+  reporterOptions: {
+    charts: false,
+    html: true,
+    json: true,
+    reportFilename: "[status]_[name]-report.html",
+    saveHtml: true,
+    saveJson: true,
+    reportDir: "cypress\\reports\\html",
+    overwrite: false,
+    embeddedScreenshots: true,
+    inlineAssets: true,
+    saveAllAttempts: false,
+  },
   e2e: {
     async setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
@@ -16,6 +29,7 @@ module.exports = defineConfig({
 
     return config;
     },
-    specPattern: "cypress/e2e/**/*"
+    specPattern: "cypress/e2e/**/*",
+    chromeWebSecurity: false
 }
 });

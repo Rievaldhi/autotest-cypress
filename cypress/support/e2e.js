@@ -14,7 +14,13 @@
 // ***********************************************************
 
 // Import commands.js using ES2015 syntax:
-import './commands'
+import './commands';
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+
+import 'cypress-mochawesome-reporter/register';
+// npx cypress run --spec (specific path of test case)
+// npx cypress run --headed --spec (specific path of test case) --browser chrome
+// npx mochawesome-merge "relativepath" > yournamefile.json
+// npx marge yournamefile.json
