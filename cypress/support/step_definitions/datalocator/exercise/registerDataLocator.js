@@ -2,6 +2,7 @@ module.exports = {
 
     dataId : {
 
+        //register proccess
         asdzzz : '1234',
         textSignupLogin :  ' Signup / Login',
         textSignup : 'New User Signup!',
@@ -23,12 +24,17 @@ module.exports = {
         inputMobileNumber : '0876547890',
         textAccountCreated : 'Account Created!',
         verifUsernameText : ' Logged in as ',
-        textAccountDeleted : 'Account Deleted!'
+        textAccountDeleted : 'Account Deleted!',
+
+        //login proccess
+        textLogin : 'Login to your account'
 
         
     },
 
     locatorId : {
+
+        //register proccess
         linkTextSignupLogin : '.shop-menu > .nav > :nth-child(4) > a',
         titleFormSignUp : '.signup-form > h2',
         fieldName : '[type="text"]',
@@ -54,7 +60,13 @@ module.exports = {
         buttonContinue : '.pull-right > .btn',
         verifUsername : ':nth-child(10) > a',
         linkTextDelete : '.shop-menu > .nav > :nth-child(5) > a',
-        waitImageLoaded : 'a > data-product-id="43"'
+        waitImageLoaded : 'a > data-product-id="43"',
+
+        //login procces
+        verifTextLogin : '.login-form > h2',
+        fieldEmailLogin : '.login-form > form > [type="email"]',
+        fieldPasswordLogin : '[type="password"]',
+        loginButton : '.login-form > form > .btn'
 
     }
 }

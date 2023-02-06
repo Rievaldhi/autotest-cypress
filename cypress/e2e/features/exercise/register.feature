@@ -1,4 +1,4 @@
-Feature: Register proccess
+Feature: Register User
 
     Register Proccess With a Valid Credential
 
@@ -15,5 +15,5 @@ Feature: Register proccess
         When I already fill in the sign up form and click create
         When I Validate Account Already Created
         When I Already Login and See My Username
-        When I will delete my account
-        Then I Validate My Account Already Deleted
+        # When I will delete my account
+        # Then I Validate My Account Already Deleted

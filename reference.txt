@@ -7,3 +7,4 @@ cypress 10 + cucumber
 
 report
 1. https://kristijan-pajtasev.medium.com/cypress-merging-multiple-mochawesome-reports-3eb8fcaaf32c
+2. https://docs.cypress.io/guides/tooling/reporters
