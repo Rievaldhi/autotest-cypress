@@ -24,3 +24,6 @@ When ('I input invalid email address',()=>{
 Then ('The error warning should be visible and contains information login failed',()=>{
     callLogin.verifLoginFailed
 })
+When ('I click linktext logout',()=>{
+    callLogin.verifTextLogout(dataLocator.dataId.textLogout)
+})

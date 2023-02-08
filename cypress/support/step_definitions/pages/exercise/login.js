@@ -27,7 +27,7 @@ class login {
         cy.get(dataLocator.locatorId.failedLoginWarning).type(textFailedLoginWarning)
     }
 
-    async verifTextLogout(){
+    async verifTextLogout(textLogout){
         cy.get(dataLocator.locatorId.linkTextLogout)
         .should('have.text', textLogout).wait(1000).click()
     }
