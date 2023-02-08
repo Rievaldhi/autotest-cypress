@@ -60,3 +60,6 @@ Then ('I Validate My Account Already Deleted',()=>{
     callRegister.clickContinueButton()
     callRegister.verifHomePage(dataLocator.dataId.textSignupLogin)
 })
+Then ('Error warning data already exist should be visible',()=>{
+    callRegister.verifTextExistingData(dataLocator.dataId.textFailedSignupWarning)
+})

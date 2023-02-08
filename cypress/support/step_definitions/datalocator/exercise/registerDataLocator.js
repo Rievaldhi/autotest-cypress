@@ -25,6 +25,7 @@ module.exports = {
         textAccountCreated : 'Account Created!',
         verifUsernameText : ' Logged in as ',
         textAccountDeleted : 'Account Deleted!',
+        textFailedSignupWarning : 'Email Address already exist!' ,
 
         //login logout proccess
         textLogin : 'Login to your account',
@@ -64,6 +65,7 @@ module.exports = {
         verifUsername : ':nth-child(10) > a',
         linkTextDelete : '.shop-menu > .nav > :nth-child(5) > a',
         waitImageLoaded : 'a > data-product-id="43"',
+        failedSignupWarning : '.signup-form > form > p',
 
         //login logout procces
         verifTextLogin : '.login-form > h2',

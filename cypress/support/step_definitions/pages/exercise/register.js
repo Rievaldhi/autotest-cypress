@@ -115,6 +115,11 @@ class register {
         .should('have.text', textAccountDeleted)   
     }
 
+    async verifTextExistingData(textFailedSignupWarning){
+        cy.get(dataLocator.locatorId.failedSignupWarning)
+        .should('have.text', textFailedSignupWarning)
+    }
+
 }
 
 module.exports = register
