@@ -19,6 +19,19 @@ class login {
         cy.get(dataLocator.locatorId.loginButton).click()
     }
 
+    async typeInvalidEmail(invalidEmail){
+        cy.get(dataLocator.locatorId.fieldEmailLogin).type(invalidEmail)
+    }
+
+    async verifLoginFailed(textFailedLoginWarning){
+        cy.get(dataLocator.locatorId.failedLoginWarning).type(textFailedLoginWarning)
+    }
+
+    async verifTextLogout(){
+        cy.get(dataLocator.locatorId.linkTextLogout)
+        .should('have.text', textLogout).wait(1000).click()
+    }
+
 
 }
 

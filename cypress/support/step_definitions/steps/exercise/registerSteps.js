@@ -13,7 +13,7 @@ When ('Web app already open the home page should be visible', ()=>{
 When ('I Click on link text Signup or Login', ()=>{
     callRegister.clickSignupText()
 })
-When ('I directed to new page the sign up form should be visible', ()=>{
+Then ('I directed to new page the sign up form should be visible', ()=>{
     callRegister.verifSignup(dataLocator.dataId.textSignup)
 })
 When ('I enter a valid Name', ()=>{
@@ -25,7 +25,7 @@ When ('I enter valid email', ()=>{
 When ('I click button sign up', ()=>{
     callRegister.clickSignupButton()
 })
-When ('I will see form to complete sign up proccess', ()=>{
+Then ('I will see form to complete sign up proccess', ()=>{
     callRegister.verifTitleAccount(dataLocator.dataId.textTitleFormSignup)
 })
 When ('I complete the sign up form', ()=>{
@@ -45,11 +45,11 @@ When ('I complete the sign up form', ()=>{
 When ('I already fill in the sign up form and click create', ()=>{
     callRegister.clickCreateButton()
 })
-When ('I Validate Account Already Created',()=>{
+Then ('I Validate Account Already Created',()=>{
     callRegister.verifAccountCreated(dataLocator.dataId.textAccountCreated)
     callRegister.clickContinueButton()
 })
-When ('I Already Login and See My Username',()=>{
+Then ('I Already Login and See My Username',()=>{
     callRegister.verifLoginAs()
 })
 When ('I will delete my account',()=>{

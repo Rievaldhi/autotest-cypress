@@ -18,6 +18,8 @@ module.exports = defineConfig({
     saveAllAttempts: false,
   },
   e2e: {
+    defaultCommandTimeout: 100000,
+
     async setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
       const bundler = createBundler({

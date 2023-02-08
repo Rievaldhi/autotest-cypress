@@ -1,4 +1,4 @@
-import { When } from "@badeball/cypress-cucumber-preprocessor"
+import { Then, When } from "@badeball/cypress-cucumber-preprocessor"
 import dataLocator from "../../datalocator/exercise/registerDataLocator"
 import login  from "../../pages/exercise/login"
 
@@ -17,4 +17,10 @@ When ('And I input valid password',()=>{
 
 When ('And I click login button',()=>{
     callLogin.clickLoginButton()
+})
+When ('I input invalid email address',()=>{
+    callLogin.typeInvalidEmail(dataLocator.dataId.invalidEmail)
+})
+Then ('The error warning should be visible and contains information login failed',()=>{
+    callLogin.verifLoginFailed
 })

@@ -26,8 +26,11 @@ module.exports = {
         verifUsernameText : ' Logged in as ',
         textAccountDeleted : 'Account Deleted!',
 
-        //login proccess
-        textLogin : 'Login to your account'
+        //login logout proccess
+        textLogin : 'Login to your account',
+        invalidEmail : 'invalid@email.com',
+        textFailedLoginWarning : 'Your email or password is incorrect!',
+        textLogout : ' Logout'
 
         
     },
@@ -62,11 +65,13 @@ module.exports = {
         linkTextDelete : '.shop-menu > .nav > :nth-child(5) > a',
         waitImageLoaded : 'a > data-product-id="43"',
 
-        //login procces
+        //login logout procces
         verifTextLogin : '.login-form > h2',
         fieldEmailLogin : '.login-form > form > [type="email"]',
         fieldPasswordLogin : '[type="password"]',
-        loginButton : '.login-form > form > .btn'
+        loginButton : '.login-form > form > .btn',
+        failedLoginWarning : '.login-form > form > p',
+        linkTextLogout : '.shop-menu > .nav > :nth-child(4) > a'
 
     }
 }
