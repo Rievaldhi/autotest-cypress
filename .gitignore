@@ -8,3 +8,4 @@ node_modules
 mochawesome-report/assets/*
 cypress/videos
 cucumber-messages.ndjson
+cypress/fixtures/assets
