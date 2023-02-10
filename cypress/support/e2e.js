@@ -24,3 +24,4 @@ import 'cypress-mochawesome-reporter/register';
 // npx cypress run --headed --spec (specific path of test case) --browser chrome
 // npx mochawesome-merge "relativepath" > yournamefile.json
 // npx marge yournamefile.json
+// USE IT FOR RUN REPORTER HTML MOCHAWASOME ------ npm run reportapi (your specific path of test case)
