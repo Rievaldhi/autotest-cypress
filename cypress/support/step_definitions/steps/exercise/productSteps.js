@@ -36,3 +36,16 @@ Then ('Verify that detail detail is visible: product name, category, price, avai
     callProduct.verifConditionProduct(dataLocator.dataId.conditionProduct)
     callProduct.verifBrandProduct(dataLocator.dataId.brandProduct)
 })
+
+When ('User enter product name in search input and click search button',()=>{
+    callProduct.inputSearchProductName(dataLocator.dataId.searchProductName)
+    callProduct.clickSearchButton()
+})
+
+Then ('Verify text title SEARCHED PRODUCTS is visible',()=>{
+    callProduct.verifSearchedTitle(dataLocator.dataId.titleSearchProduct)
+})
+
+Then ('Verify the products related to search are visible',()=>{
+    callProduct.verifResultSearch1(dataLocator.dataId.resultSearch1)
+})

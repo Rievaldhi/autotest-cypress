@@ -12,7 +12,13 @@ module.exports = {
         priceProduct : 'Rs. 500',
         availProduct : ' In Stock',
         conditionProduct : ' New',
-        brandProduct : ' Polo'
+        brandProduct : ' Polo',
+
+        // search product
+        searchProductName : 'jeans',
+        titleSearchProduct : 'Searched Products',
+        resultSearch1 : 'Soft Stretch Jeans' //contains
+
     },
 
     locatorId : {
@@ -27,6 +33,13 @@ module.exports = {
         textPriceProduct : ':nth-child(5) > span',
         textAvailProduct : '.product-information > :nth-child(6)', //.contains
         textConditionProduct : '.product-information > :nth-child(7)', //.contains
-        textBrandProduct : '.product-information > :nth-child(8)' //.contains
+        textBrandProduct : '.product-information > :nth-child(8)', //.contains
+    
+        // search product
+        fieldSearchProduct : '#search_product',
+        buttonSeachProduct : '#submit_search',
+        //use locator textTitleProduct
+        textResultSearch1 : ':nth-child(3) > .product-image-wrapper > .single-products > .productinfo > p' 
+
     }
 }

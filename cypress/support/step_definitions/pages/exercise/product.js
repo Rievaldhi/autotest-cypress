@@ -62,6 +62,25 @@ class product {
         .contains(brandProduct)
     }
 
+    async inputSearchProductName(searchProductName){
+        cy.get(dataLocator.locatorId.fieldSearchProduct)
+        .type(searchProductName).wait(500)
+    }
+
+    async clickSearchButton(){
+        cy.get(dataLocator.locatorId.buttonSeachProduct).click()
+    }
+
+    async verifSearchedTitle(titleSearchProduct){
+        cy.get(dataLocator.locatorId.textTitleProduct)
+        .wait(500).should('have.text', titleSearchProduct)
+    }
+
+    async verifResultSearch1(resultSearch1){
+        cy.get(dataLocator.locatorId.textResultSearch1)
+        .contains(resultSearch1)
+    }
+
 }
 
 module.exports = product
