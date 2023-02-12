@@ -20,3 +20,11 @@ When ('User enter email address in input and click arrow button',()=>{
 Then ('Verify success message You have been successfully subscribed! is visible',()=>{
     callHome.verifSuccessSubs(dataLocator.dataId.successSubs)
 })
+
+When ('User click link text cart',()=>{
+    callHome.clickLinkTextCart(dataLocator.dataId.textCart)
+})
+
+Then ('Verify User Already in Cart Page', ()=>{
+    callHome.verifCartPage(dataLocator.dataId.textCartPage)
+})

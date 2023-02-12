@@ -24,6 +24,16 @@ class home {
         cy.get(dataLocator.locatorId.alertSuccessSubs)
         .should('be.visible').should('have.text', successSubs)
     }
+
+    async clickLinkTextCart(textCart){
+        cy.get(dataLocator.locatorId.linkTextCart)
+        .should('have.text', textCart).click()
+    }
+
+    async verifCartPage(textCartPage){
+        cy.get(dataLocator.locatorId.fieldCartPage)
+        .should('have.text', textCartPage)
+    }
 }
 
 module.exports = home
