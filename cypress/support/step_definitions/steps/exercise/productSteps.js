@@ -49,3 +49,28 @@ Then ('Verify text title SEARCHED PRODUCTS is visible',()=>{
 Then ('Verify the products related to search are visible',()=>{
     callProduct.verifResultSearch1(dataLocator.dataId.resultSearch1)
 })
+
+When ('User hover over first product and click Add to cart',()=>{
+    callProduct.clickAddProduct1()
+})
+
+Then ('Verify alert success added product should be visible',()=>{
+    callProduct.verifyAlertProductAdded(dataLocator.dataId.textModalProductAdded)
+})
+
+When ('User click continue shopping button',()=>{
+    callProduct.clickContinueShopping()
+})
+
+When ('User hover over second product and click Add to cart',()=>{
+    callProduct.clickAddProduct2()
+})
+
+When ('User click View Cart button',()=>{
+    callProduct.clickViewCart()
+})
+
+Then ('Verify both products are added to Cart and Verify their prices, quantity and total price',()=>{
+    callProduct.verifFirstProductAdded()
+    callProduct.verifSecondProductAdded()
+})

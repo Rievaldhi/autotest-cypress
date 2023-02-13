@@ -81,6 +81,49 @@ class product {
         .contains(resultSearch1)
     }
 
+    async clickAddProduct1(){
+        cy.get(dataLocator.locatorId.linkTextAddProduct1).click()
+    }
+
+    async verifyAlertProductAdded(textModalProductAdded){
+        cy.get(dataLocator.locatorId.modalProductAdded)
+        .should('have.text', textModalProductAdded)
+    }
+
+    async clickContinueShopping(){
+        cy.get(dataLocator.locatorId.buttonContinueShop).click()
+    }
+
+    async clickAddProduct2(){
+        cy.get(dataLocator.locatorId.linkTextAddProduct2).click()
+    }
+
+    async clickViewCart(){
+        cy.get(dataLocator.locatorId.modalViewCart).click()
+    }
+
+    // only for test cases id 12
+    async verifFirstProductAdded(){
+        cy.get(dataLocator.locatorId.cartProductName1)
+        .should('have.text', dataLocator.dataId.firstProduct)
+        cy.get(dataLocator.locatorId.cartProductPrice1)
+        .should('have.text', dataLocator.dataId.priceProduct)
+        cy.get(dataLocator.locatorId.cartProductQty1)
+        .should('have.text', dataLocator.dataId.qtyProduct)
+        cy.get(dataLocator.locatorId.cartProductTotal1)
+        .should('have.text', dataLocator.dataId.totalProduct)
+    }
+    async verifSecondProductAdded(){
+        cy.get(dataLocator.locatorId.cartProductName2)
+        .should('have.text', dataLocator.dataId.productName2)
+        cy.get(dataLocator.locatorId.cartProductPrice2)
+        .should('have.text', dataLocator.dataId.priceProduct2)
+        cy.get(dataLocator.locatorId.cartProductQty2)
+        .should('have.text', dataLocator.dataId.qtyProduct2)
+        cy.get(dataLocator.locatorId.cartProductTotal2)
+        .should('have.text', dataLocator.dataId.totalProduct2)
+    }
+
 }
 
 module.exports = product

@@ -17,7 +17,18 @@ module.exports = {
         // search product
         searchProductName : 'jeans',
         titleSearchProduct : 'Searched Products',
-        resultSearch1 : 'Soft Stretch Jeans' //contains
+        resultSearch1 : 'Soft Stretch Jeans', //contains
+
+        // add product
+        textModalProductAdded : 'Your product has been added to cart.',
+        textContinueShop : 'Continue Shopping',
+        totalProduct : 'Rs. 500',
+        qtyProduct : '1',
+        productName2 : 'Men Tshirt',
+        priceProduct2 : 'Rs. 400',
+        qtyProduct2 : '1',
+        totalProduct2 : 'Rs. 400'
+
 
     },
 
@@ -39,7 +50,23 @@ module.exports = {
         fieldSearchProduct : '#search_product',
         buttonSeachProduct : '#submit_search',
         //use locator textTitleProduct
-        textResultSearch1 : ':nth-child(3) > .product-image-wrapper > .single-products > .productinfo > p' 
+        textResultSearch1 : ':nth-child(3) > .product-image-wrapper > .single-products > .productinfo > p',
+        
+        // add product
+        linkTextAddProduct1 : ':nth-child(3) > .product-image-wrapper > .single-products > .productinfo > .btn',
+        modalProductAdded : '.modal-body > :nth-child(1)',
+        buttonContinueShop : '.modal-footer > .btn',
+        linkTextAddProduct2 : ':nth-child(4) > .product-image-wrapper > .single-products > .productinfo > .btn',
+        modalViewCart : 'u',
+        cartProductName1 : '#product-1 > .cart_description > h4 > a',
+        cartProductPrice1 : '#product-1 > .cart_price > p',
+        cartProductQty1 : '#product-1 > .cart_quantity > .disabled',
+        cartProductTotal1 : '#product-1 > .cart_total > .cart_total_price',
+        cartProductName2 : '#product-2 > .cart_description > h4 > a',
+        cartProductPrice2 : '#product-2 > .cart_price > p',
+        cartProductQty2 : '#product-2 > .cart_quantity > .disabled',
+        cartProductTotal2 : '#product-2 > .cart_total > .cart_total_price',
+
 
     }
 }
