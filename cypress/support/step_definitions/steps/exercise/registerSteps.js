@@ -63,3 +63,12 @@ Then ('I Validate My Account Already Deleted',()=>{
 Then ('Error warning data already exist should be visible',()=>{
     callRegister.verifTextExistingData(dataLocator.dataId.textFailedSignupWarning)
 })
+
+//flow from checkout product
+When ('User do signup or register proccess',()=>{
+    callRegister.inputNameAndEmail_CO()
+})
+
+Then ('User Will be Login Properly and See Their Username',()=>{
+    callRegister.verifLogin_CO()
+})

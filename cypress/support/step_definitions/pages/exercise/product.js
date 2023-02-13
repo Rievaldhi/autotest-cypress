@@ -138,6 +138,95 @@ class product {
         .should('have.text', addQtyProductDetail)
     }
 
+    async clickProceedCheckout(){
+        cy.get(dataLocator.locatorId.buttonProceedCheckout)
+        .should('have.text', dataLocator.dataId.textButtonProceedCheckout).click()
+    }
+
+    async clickLinkTexRegisterLogin(){
+        cy.get(dataLocator.locatorId.linkTextRegisterLogin)
+        .should('have.text', dataLocator.dataId.textRegisterLogin).click()
+    }
+
+    async clickLinkTextCart(){
+        cy.get(dataLocator.locatorId.linkTextCart).click()
+    }
+
+    async verifTitleAddressDetails(textAddressDetails){
+        cy.get(dataLocator.locatorId.titleAddressDetails)
+        .should('have.text', textAddressDetails)
+    }
+
+    async verifTitleReviewOrder(textReviewOrder){
+        cy.get(dataLocator.locatorId.titleReviewOrder)
+        .should('have.text', textReviewOrder)
+    }
+
+    async inputCommentCart(inputComment){
+        cy.get(dataLocator.locatorId.fieldCommentCart)
+        .type(inputComment)
+    }
+
+    async clickButtonPlaceOrder(){
+        cy.get(dataLocator.locatorId.buttonPlaceOrder).click()
+    }
+
+    async verifTitlePayment(textPayment){
+        cy.get(dataLocator.locatorId.titlePayment)
+        .should('have.text', textPayment)
+    }
+
+    async inputFieldNameCard(inputNameCard){
+        cy.get(dataLocator.locatorId.fieldNameCard)
+       .type(inputNameCard)
+    }
+
+    async inputFieldNumberCard(inputNumberCard){
+        cy.get(dataLocator.locatorId.fieldCardNumber)
+        .type(inputNumberCard)
+    }
+
+    async inputFieldCVC(inputCVC){
+        cy.get(dataLocator.locatorId.fieldCVC)
+        .type(inputCVC)
+    }
+
+    async inputFieldExpMonth(inputExpMonth){
+        cy.get(dataLocator.locatorId.fieldExpMonth)
+        .type(inputExpMonth)
+    }
+
+    async inputFieldExpYear(inputExpYear){
+        cy.get(dataLocator.locatorId.fieldExpYear)
+        .type(inputExpYear)
+    }
+
+    async clickButtonPayConfirm(){
+        cy.get(dataLocator.locatorId.buttonPayConfirm).click()
+    }
+
+    async verifAlertSuccessPayOrder(successPayOrder){
+        cy.get(dataLocator.locatorId.alertSuccessPayment)
+        .should('be.visible').contains(successPayOrder)
+    }
+
+    async verifOrderConfirmedPage(textOrderConfirmedPage){
+        cy.get(dataLocator.locatorId.orderConfirmedPage)
+        .should('have.text', textOrderConfirmedPage)
+    }
+
+    async clickDownloadInvoice(){
+        cy.get(dataLocator.locatorId.buttonDownloadInvoice)
+        .should('have.text', dataLocator.dataId.textDownloadInvoice).click().wait(500)
+        .readFile('cypress/downloads/invoice.txt').should('exist')
+    }
+
+    async clickButtonContinueOrderConfirmed(){
+        cy.get(dataLocator.locatorId.buttonContinueOrderConfirmed).click()
+    }
+
+
+
 }
 
 module.exports = product

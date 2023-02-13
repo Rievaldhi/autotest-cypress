@@ -31,7 +31,12 @@ module.exports = {
         textLogin : 'Login to your account',
         invalidEmail : 'invalid@email.com',
         textFailedLoginWarning : 'Your email or password is incorrect!',
-        textLogout : ' Logout'
+        textLogout : ' Logout',
+
+        //checkout
+        inputNameSignupCheckout : 'try CO',
+        inputEmailSignupCheckout : 'CO-asdzzz@asdzzz.com',
+        
 
         
     },

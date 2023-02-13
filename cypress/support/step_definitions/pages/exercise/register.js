@@ -30,6 +30,12 @@ class register {
         cy.get(dataLocator.locatorId.fieldEmail).type(inputEmailSignup)
     }
 
+    //register flow checkout product
+    async inputNameAndEmail_CO(){
+        cy.get(dataLocator.locatorId.fieldName).type(dataLocator.dataId.inputNameSignupCheckout)
+        cy.get(dataLocator.locatorId.fieldEmail).type(dataLocator.dataId.inputEmailSignupCheckout)
+    }
+
     async clickSignupButton(){
         cy.get(dataLocator.locatorId.buttonSignup).click()
     }
@@ -104,6 +110,12 @@ class register {
     async verifLoginAs(){
         cy.get(dataLocator.locatorId.verifUsername)
         .contains(dataLocator.dataId.verifUsernameText + dataLocator.dataId.inputNameSignup)
+    }
+
+    //flow from checkout product
+    async verifLogin_CO(){
+        cy.get(dataLocator.locatorId.verifUsername)
+        .contains(dataLocator.dataId.verifUsernameText + dataLocator.dataId.inputNameSignupCheckout)
     }
     
     async clickLinkTextDelete(){

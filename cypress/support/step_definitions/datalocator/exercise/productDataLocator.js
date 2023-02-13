@@ -28,7 +28,23 @@ module.exports = {
         priceProduct2 : 'Rs. 400',
         qtyProduct2 : '1',
         totalProduct2 : 'Rs. 400',
-        addQtyProductDetail : '4'
+        addQtyProductDetail : '4',
+
+        //checkout
+        textButtonProceedCheckout : 'Proceed To Checkout',
+        textRegisterLogin : 'Register / Login',
+        textAddressDetails : 'Address Details',
+        textReviewOrder : 'Review Your Order',
+        inputComment : 'This is for and from text box comment',
+        textPayment : 'Payment',
+        inputNameCard : 'My Name',
+        inputNumberCard : '0010-0020-0030-444',
+        inputCVC : '212',
+        inputExpMonth : '12',
+        inputExpYear : '2030',
+        successPayOrder : 'Your order has been placed successfully!', //contains
+        textOrderConfirmedPage : 'Congratulations! Your order has been confirmed!',
+        textDownloadInvoice : 'Download Invoice'
 
 
     },
@@ -70,8 +86,25 @@ module.exports = {
         fieldQtyProductDetails : '#quantity',
         buttonAddCartProductDetails : ':nth-child(5) > .btn',
 
-
-
+        //checkout
+        buttonProceedCheckout : '.col-sm-6 > .btn',
+        linkTextRegisterLogin : '.modal-body > :nth-child(2) > a > u',
+        linkTextCart : '.shop-menu > .nav > :nth-child(3)',
+        titleAddressDetails : ':nth-child(2) > .heading',
+        titleReviewOrder : ':nth-child(4) > .heading',
+        fieldCommentCart : '.form-control',
+        buttonPlaceOrder : ':nth-child(7) > .btn',
+        titlePayment : '.heading',
+        fieldNameCard : ':nth-child(2) > .col-sm-12 > .form-control',
+        fieldCardNumber : ':nth-child(3) > .col-sm-12 > .form-control',
+        fieldCVC : '.cvc > .form-control',
+        fieldExpMonth : ':nth-child(2) > .form-control',
+        fieldExpYear : ':nth-child(3) > .form-control',
+        buttonPayConfirm : '#submit',
+        alertSuccessPayment : '.alert-success',
+        orderConfirmedPage : '.col-sm-9 > p',
+        buttonDownloadInvoice : '.col-sm-9 > .btn-default',
+        buttonContinueOrderConfirmed : '.pull-right > .btn'
 
     }
 }

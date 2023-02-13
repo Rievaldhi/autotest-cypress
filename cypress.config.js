@@ -11,7 +11,7 @@ module.exports = defineConfig({
     reportFilename: "[status]_[name]-report.html",
     saveHtml: true,
     saveJson: true,
-    reportDir: "cypress\\reports\\html",
+    reportDir: "cypress//reports//html",
     overwrite: false,
     embeddedScreenshots: true,
     inlineAssets: true,
@@ -20,6 +20,7 @@ module.exports = defineConfig({
   e2e: {
     defaultCommandTimeout: 100000,
     pageLoadTimeout: 100000,
+    downloadsFolder	: 'cypress/downloads',
     async setupNodeEvents(on, config) {
       require('cypress-mochawesome-reporter/plugin')(on);
       const bundler = createBundler({

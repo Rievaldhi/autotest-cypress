@@ -86,3 +86,63 @@ When ('User click Add to cart button',()=>{
 Then ('Verify that product is displayed in cart page with exact quantity',()=>{
     callProduct.verifInputedQty(dataLocator.dataId.addQtyProductDetail)
 })
+
+When ('User Click Proceed To Checkout',()=>{
+    callProduct.clickProceedCheckout()
+})
+
+When ('User Click Register or Login button',()=>{
+    callProduct.clickLinkTexRegisterLogin()
+})
+
+When ('User Click Cart button',()=>{
+    callProduct.clickLinkTextCart()
+})
+
+Then ('Verify Address Details',()=>{
+    callProduct.verifTitleAddressDetails(dataLocator.dataId.textAddressDetails)
+})
+
+Then ('Verify Review Order',()=>{
+    callProduct.verifTitleReviewOrder(dataLocator.dataId.textReviewOrder)
+})
+
+When ('User enter description in comment text area',()=>{
+    callProduct.inputCommentCart(dataLocator.dataId.inputComment)
+})
+
+When ('User click Place Order Button',()=>{
+    callProduct.clickButtonPlaceOrder()
+})
+
+Then ('Verify User Already in Payment Page',()=>{
+    callProduct.verifTitlePayment(dataLocator.dataId.textPayment)
+})
+
+When ('User enter payment details: Name on Card, Card Number, CVC, Expiration date',()=>{
+    callProduct.inputFieldNameCard(dataLocator.dataId.inputNameCard)
+    callProduct.inputFieldNumberCard(dataLocator.dataId.inputNumberCard)
+    callProduct.inputFieldCVC(dataLocator.dataId.inputCVC)
+    callProduct.inputFieldExpMonth(dataLocator.dataId.inputExpMonth)
+    callProduct.inputFieldExpYear(dataLocator.dataId.inputExpYear)
+})
+
+When ('User Click Pay and Confirm Order button',()=>{
+    callProduct.clickButtonPayConfirm()
+})
+
+Then ('Verify Alert Success is Visible',()=>{
+    callProduct.verifAlertSuccessPayOrder(dataLocator.dataId.successPayOrder)
+})
+
+Then ('Verify User Directed to Payment Success Page',()=>{
+    callProduct.verifOrderConfirmedPage(dataLocator.dataId.textOrderConfirmedPage)
+})
+
+When ('User Click Download Invoice Button',()=>{
+    callProduct.clickDownloadInvoice()
+})
+
+When ('User Click Continue Button in Order Placed Page',()=>{
+    callProduct.clickButtonContinueOrderConfirmed()
+})
