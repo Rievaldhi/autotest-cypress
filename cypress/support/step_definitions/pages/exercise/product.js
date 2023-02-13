@@ -124,6 +124,20 @@ class product {
         .should('have.text', dataLocator.dataId.totalProduct2)
     }
 
+    async inputQtyProductDetails1(addQtyProductDetail){
+        cy.get(dataLocator.locatorId.fieldQtyProductDetails)
+        .clear().type(addQtyProductDetail)
+    }
+
+    async clickAddToCart(){
+        cy.get(dataLocator.locatorId.buttonAddCartProductDetails).click()
+    }
+
+    async verifInputedQty(addQtyProductDetail){
+        cy.get(dataLocator.locatorId.cartProductQty1)
+        .should('have.text', addQtyProductDetail)
+    }
+
 }
 
 module.exports = product

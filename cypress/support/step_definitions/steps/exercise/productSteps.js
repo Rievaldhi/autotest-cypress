@@ -74,3 +74,15 @@ Then ('Verify both products are added to Cart and Verify their prices, quantity 
     callProduct.verifFirstProductAdded()
     callProduct.verifSecondProductAdded()
 })
+
+When ('User increase quantity to 4',()=>{
+    callProduct.inputQtyProductDetails1(dataLocator.dataId.addQtyProductDetail)
+})
+
+When ('User click Add to cart button',()=>{
+    callProduct.clickAddToCart()
+})
+
+Then ('Verify that product is displayed in cart page with exact quantity',()=>{
+    callProduct.verifInputedQty(dataLocator.dataId.addQtyProductDetail)
+})

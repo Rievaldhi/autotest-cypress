@@ -27,7 +27,8 @@ module.exports = {
         productName2 : 'Men Tshirt',
         priceProduct2 : 'Rs. 400',
         qtyProduct2 : '1',
-        totalProduct2 : 'Rs. 400'
+        totalProduct2 : 'Rs. 400',
+        addQtyProductDetail : '4'
 
 
     },
@@ -66,6 +67,10 @@ module.exports = {
         cartProductPrice2 : '#product-2 > .cart_price > p',
         cartProductQty2 : '#product-2 > .cart_quantity > .disabled',
         cartProductTotal2 : '#product-2 > .cart_total > .cart_total_price',
+        fieldQtyProductDetails : '#quantity',
+        buttonAddCartProductDetails : ':nth-child(5) > .btn',
+
+
 
 
     }
