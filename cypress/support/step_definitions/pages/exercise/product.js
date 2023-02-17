@@ -225,6 +225,15 @@ class product {
         cy.get(dataLocator.locatorId.buttonContinueOrderConfirmed).click()
     }
 
+    async clickDeleteButtonCart(){
+        cy.get(dataLocator.locatorId.deleteButtonCart2).click()
+        // .click({multiple: true, force:true})
+    }
+
+    async verifSecondProductDeleted(){
+        cy.get(dataLocator.locatorId.cartProductName2)
+        .should('not.exist')
+    }
 
 
 }

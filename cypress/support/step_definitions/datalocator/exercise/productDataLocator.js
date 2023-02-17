@@ -104,7 +104,10 @@ module.exports = {
         alertSuccessPayment : '.alert-success',
         orderConfirmedPage : '.col-sm-9 > p',
         buttonDownloadInvoice : '.col-sm-9 > .btn-default',
-        buttonContinueOrderConfirmed : '.pull-right > .btn'
+        buttonContinueOrderConfirmed : '.pull-right > .btn',
+
+        //delete product from cart
+        deleteButtonCart2 : '#product-2 > .cart_delete > .cart_quantity_delete'
 
     }
 }

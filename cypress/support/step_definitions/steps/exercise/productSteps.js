@@ -146,3 +146,11 @@ When ('User Click Download Invoice Button',()=>{
 When ('User Click Continue Button in Order Placed Page',()=>{
     callProduct.clickButtonContinueOrderConfirmed()
 })
+
+When ('User Click Delete Button at Second Product or Product Id = 2',()=>{
+    callProduct.clickDeleteButtonCart()
+})
+
+Then ('Verify Product Id 2 Should be Deleted',()=>{
+    callProduct.verifSecondProductDeleted()
+})
