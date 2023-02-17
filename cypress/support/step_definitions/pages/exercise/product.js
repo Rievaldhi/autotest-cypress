@@ -82,7 +82,7 @@ class product {
     }
 
     async clickAddProduct1(){
-        cy.get(dataLocator.locatorId.linkTextAddProduct1).click()
+        cy.get(dataLocator.locatorId.linkTextAddProduct1).click({ multiple: true, force: true })
     }
 
     async verifyAlertProductAdded(textModalProductAdded){
