@@ -227,7 +227,6 @@ class product {
 
     async clickDeleteButtonCart(){
         cy.get(dataLocator.locatorId.deleteButtonCart2).click()
-        // .click({multiple: true, force:true})
     }
 
     async verifSecondProductDeleted(){
@@ -235,6 +234,60 @@ class product {
         .should('not.exist')
     }
 
+    async verifSideMenuCategory(sideMenuCategory){
+        cy.get(dataLocator.locatorId.fieldSideMenuCategory)
+        .should('have.text', sideMenuCategory)
+    }
+
+    async verifWomenCategoryAndClick(womenCategory){
+        cy.get(dataLocator.locatorId.fieldWomenCategory)
+        .contains(womenCategory).wait(500).click()
+    }
+
+    async verifSubWomenCategoryAndClick(subWomenCategory){
+        cy.get(dataLocator.locatorId.fieldSubWomenCategory)
+        .should('have.text', subWomenCategory).wait(500).click()
+    }
+
+    async verifTitleDressCategory(titleWomenDressCategory){
+        cy.get(dataLocator.locatorId.textTitleProduct)
+        .should('have.text', titleWomenDressCategory)
+    }
+
+    async verifDressCategory(){
+        cy.get(dataLocator.locatorId.resultCategory1)
+        .contains(dataLocator.dataId.dressResultCategory1)
+        cy.get(dataLocator.locatorId.resultCategory2)
+        .contains(dataLocator.dataId.dressResultCategory2)
+        cy.get(dataLocator.locatorId.resultCategory3)
+        .contains(dataLocator.dataId.dressResultCategory3)
+    }
+
+    async verifManCategoryAndClick(manCategory){
+        cy.get(dataLocator.locatorId.fieldManCategory)
+        .contains(manCategory).wait(500).click()
+    }
+
+    async verifSubManCategoryAndClick(subManCategory){
+        cy.get(dataLocator.locatorId.fieldSubManCategory)
+        .should('have.text', subManCategory).wait(500).click()
+    }
+
+    async verifTitleJeansCategory(titleManJeansCategory){
+        cy.get(dataLocator.locatorId.textTitleProduct)
+        .should('have.text', titleManJeansCategory)
+    }
+
+    async verifJeansCategory(){
+        cy.get(dataLocator.locatorId.resultCategory1)
+        .contains(dataLocator.dataId.jeansResultCategory1)
+        cy.get(dataLocator.locatorId.resultCategory2)
+        .contains(dataLocator.dataId.jeansResultCategory2)
+        cy.get(dataLocator.locatorId.resultCategory3)
+        .contains(dataLocator.dataId.jeansResultCategory3)
+    }
+
+    
 
 }
 

@@ -44,7 +44,23 @@ module.exports = {
         inputExpYear : '2030',
         successPayOrder : 'Your order has been placed successfully!', //contains
         textOrderConfirmedPage : 'Congratulations! Your order has been confirmed!',
-        textDownloadInvoice : 'Download Invoice'
+        textDownloadInvoice : 'Download Invoice',
+
+        // category product
+        sideMenuCategory: 'Category',
+        womenCategory : ' Women',
+        subWomenCategory: 'Dress ',
+        titleWomenDressCategory : 'Women - Dress Products',
+        dressResultCategory1 : 'Sleeveless Dress',
+        dressResultCategory2 : 'Stylish Dress',
+        dressResultCategory3 : 'Rose Pink Embroidered Maxi Dress',
+        manCategory : ' Men',
+        subManCategory: 'Jeans ',
+        titleManJeansCategory : 'Men - Jeans Products',
+        jeansResultCategory1 : 'Soft Stretch Jeans',
+        jeansResultCategory2 : 'Regular Fit Straight Jeans',
+        jeansResultCategory3 : 'Grunt Blue Slim Fit Jeans',
+
 
 
     },
@@ -107,7 +123,19 @@ module.exports = {
         buttonContinueOrderConfirmed : '.pull-right > .btn',
 
         //delete product from cart
-        deleteButtonCart2 : '#product-2 > .cart_delete > .cart_quantity_delete'
+        deleteButtonCart2 : '#product-2 > .cart_delete > .cart_quantity_delete',
+
+        //category product
+        fieldSideMenuCategory : '.left-sidebar > :nth-child(1)',
+        fieldWomenCategory : ':nth-child(1) > .panel-heading > .panel-title',
+        fieldSubWomenCategory : '#Women > .panel-body > ul > :nth-child(1) > a',
+        resultCategory1 : ':nth-child(3) > .product-image-wrapper > .single-products > .productinfo > p',
+        resultCategory2 : ':nth-child(4) > .product-image-wrapper > .single-products > .productinfo > p',
+        resultCategory3 : ':nth-child(5) > .product-image-wrapper > .single-products > .productinfo > p',
+        fieldManCategory : ':nth-child(2) > .panel-heading > .panel-title',
+        fieldSubManCategory : '#Men > .panel-body > ul > :nth-child(2) > a'
+        
+
 
     }
 }

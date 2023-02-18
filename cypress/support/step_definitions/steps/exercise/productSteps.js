@@ -154,3 +154,40 @@ When ('User Click Delete Button at Second Product or Product Id = 2',()=>{
 Then ('Verify Product Id 2 Should be Deleted',()=>{
     callProduct.verifSecondProductDeleted()
 })
+
+Then ('Verify that categories are visible on left side bar',()=>{
+    callProduct.verifSideMenuCategory(dataLocator.dataId.sideMenuCategory)
+})
+
+When ('User Click on Women category',()=>{
+    callProduct.verifWomenCategoryAndClick(dataLocator.dataId.womenCategory)
+})
+
+When ('User Click on sub category for example Dress',()=>{
+    callProduct.verifSubWomenCategoryAndClick(dataLocator.dataId.subWomenCategory)
+})
+
+Then ('Verify that category page is displayed and confirm text Women Dress Products',()=>{
+    callProduct.verifTitleDressCategory(dataLocator.dataId.titleWomenDressCategory)
+})
+
+Then ('Verify the Result From Dress Category',()=>{
+    callProduct.verifDressCategory()
+})
+
+When ('User Click on Man category',()=>{
+    callProduct.verifManCategoryAndClick(dataLocator.dataId.manCategory)
+})
+
+When ('User Click on sub category for example Jeans',()=>{
+    callProduct.verifSubManCategoryAndClick(dataLocator.dataId.subManCategory)
+})
+
+Then ('Verify that category page is displayed and confirm text Man Jeans Products',()=>{
+    callProduct.verifTitleJeansCategory(dataLocator.dataId.titleManJeansCategory)
+})
+
+Then ('Verify the Result From Jeans Category',()=>{
+    callProduct.verifJeansCategory()
+})
+
