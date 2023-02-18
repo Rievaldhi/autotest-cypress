@@ -287,7 +287,99 @@ class product {
         .contains(dataLocator.dataId.jeansResultCategory3)
     }
 
+    async verifSideMenuBrands(sideMenuBrands){
+        cy.get(dataLocator.locatorId.fieldSideMenuBrands)
+        .should('have.text', sideMenuBrands)
+    } 
     
+    async verifPoloBrandsAndClick(poloBrands){
+        cy.get(dataLocator.locatorId.fieldPoloBrands)
+        .contains(poloBrands).wait(500).click()
+    }
+
+    async verifTitlePoloBrands(titlePoloBrands){
+        cy.get(dataLocator.locatorId.textTitleProduct)
+        .should('have.text', titlePoloBrands)
+    } 
+    
+    async verifHmBrandsAndClick(hmBrands){
+        cy.get(dataLocator.locatorId.fieldHmBrands)
+        .contains(hmBrands).wait(500).click()
+    }
+
+    async verifTitleHmBrands(titleHmBrands){
+        cy.get(dataLocator.locatorId.textTitleProduct)
+        .should('have.text', titleHmBrands)
+    } 
+    
+    async verifMadameBrandsAndClick(madameBrands){
+        cy.get(dataLocator.locatorId.fieldMadameBrands)
+        .contains(madameBrands).wait(500).click()
+    }
+
+    async verifTitleMadameBrands(titleMadameBrands){
+        cy.get(dataLocator.locatorId.textTitleProduct)
+        .should('have.text', titleMadameBrands)
+    } 
+    
+    async verifMastBrandsAndClick(mastBrands){
+        cy.get(dataLocator.locatorId.fieldMastBrands)
+        .contains(mastBrands).wait(500).click()
+    }
+
+    async verifTitleMastBrands(titleMastBrands){
+        cy.get(dataLocator.locatorId.textTitleProduct)
+        .should('have.text', titleMastBrands)
+    } 
+    
+    async verifBabyBrandsAndClick(babyBrands){
+        cy.get(dataLocator.locatorId.fieldBabyBrands)
+        .contains(babyBrands).wait(500).click()
+    }
+
+    async verifTitleBabyBrands(titleBabyBrands){
+        cy.get(dataLocator.locatorId.textTitleProduct)
+        .should('have.text', titleBabyBrands)
+    } 
+    
+    async verifAllenBrandsAndClick(allenBrands){
+        cy.get(dataLocator.locatorId.fieldAllenBrands)
+        .contains(allenBrands).wait(500).click()
+    }
+
+    async verifTitleAllenBrands(titleAllenBrands){
+        cy.get(dataLocator.locatorId.textTitleProduct)
+        .should('have.text', titleAllenBrands)
+    } 
+    
+    async verifBibaBrandsAndClick(bibaBrands){
+        cy.get(dataLocator.locatorId.fieldBibaBrands)
+        .contains(bibaBrands).wait(500).click()
+    }
+
+    async verifTitleBibaBrands(titleBibaBrands){
+        cy.get(dataLocator.locatorId.textTitleProduct)
+        .should('have.text', titleBibaBrands)
+    } 
+    
+    async verifKookieBrandsAndClick(kookieBrands){
+        cy.get(dataLocator.locatorId.fieldKookieBrands)
+        .contains(kookieBrands).wait(500).click()
+    }
+
+    async verifTitleKookieBrands(titleKookieBrands){
+        cy.get(dataLocator.locatorId.textTitleProduct)
+        .should('have.text', titleKookieBrands)
+    } 
+
+    async verifKookieBrands(){
+        cy.get(dataLocator.locatorId.resultCategory1)
+        .contains(dataLocator.dataId.kookieResultBrands1)
+        cy.get(dataLocator.locatorId.resultCategory2)
+        .contains(dataLocator.dataId.kookieResultBrands2)
+        cy.get(dataLocator.locatorId.resultCategory3)
+        .contains(dataLocator.dataId.kookieResultBrands3)
+    }
 
 }
 

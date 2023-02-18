@@ -191,3 +191,43 @@ Then ('Verify the Result From Jeans Category',()=>{
     callProduct.verifJeansCategory()
 })
 
+Then ('Verify that brands are visible on left side bar',()=>{
+    callProduct.verifSideMenuBrands(dataLocator.dataId.sideMenuBrands)
+})
+
+When ('User Click on Polo Brands',()=>{
+    callProduct.verifPoloBrandsAndClick(dataLocator.dataId.poloBrands)
+})
+
+Then ('Verify that Polo Brands page is displayed',()=>{
+    callProduct.verifTitlePoloBrands(dataLocator.dataId.titlePoloBrands)
+})
+
+When ('User Click on Any Brands Name',()=>{
+    callProduct.verifHmBrandsAndClick(dataLocator.dataId.hmBrands)
+    callProduct.verifTitleHmBrands(dataLocator.dataId.titleHmBrands)
+    
+    callProduct.verifMadameBrandsAndClick(dataLocator.dataId.madameBrands)
+    callProduct.verifTitleMadameBrands(dataLocator.dataId.titleMadameBrands)
+    
+    callProduct.verifMastBrandsAndClick(dataLocator.dataId.mastBrands)
+    callProduct.verifTitleMastBrands(dataLocator.dataId.titleMastBrands)
+    
+    callProduct.verifBabyBrandsAndClick(dataLocator.dataId.babyBrands)
+    callProduct.verifTitleBabyBrands(dataLocator.dataId.titleBabyBrands)
+    
+    callProduct.verifAllenBrandsAndClick(dataLocator.dataId.allenBrands)
+    callProduct.verifTitleAllenBrands(dataLocator.dataId.titleAllenBrands)
+    
+    callProduct.verifBibaBrandsAndClick(dataLocator.dataId.bibaBrands)
+    callProduct.verifTitleBibaBrands(dataLocator.dataId.titleBibaBrands)
+})
+
+When ('User Cilck on Kookie Brands',()=>{
+    callProduct.verifKookieBrandsAndClick(dataLocator.dataId.kookieBrands)
+    callProduct.verifTitleKookieBrands(dataLocator.dataId.titleKookieBrands)
+})
+
+Then ('Verify the Result From Kookie Category',()=>{
+    callProduct.verifKookieBrands()
+})

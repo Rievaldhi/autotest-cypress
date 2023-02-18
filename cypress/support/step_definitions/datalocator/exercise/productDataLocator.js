@@ -61,6 +61,27 @@ module.exports = {
         jeansResultCategory2 : 'Regular Fit Straight Jeans',
         jeansResultCategory3 : 'Grunt Blue Slim Fit Jeans',
 
+        // brand product
+        sideMenuBrands : 'Brands',
+        poloBrands : 'Polo',
+        hmBrands : 'H&M',
+        madameBrands : 'Madame',
+        mastBrands : 'Mast & Harbour',
+        babyBrands : 'Babyhug',
+        allenBrands : 'Allen Solly Junior',
+        kookieBrands : 'Kookie Kids',
+        bibaBrands : 'Biba',
+        titlePoloBrands : 'Brand - Polo Products',
+        titleHmBrands : 'Brand - H&M Products',
+        titleMadameBrands : 'Brand - Madame Products',
+        titleMastBrands : 'Brand - Mast & Harbour Products',
+        titleBabyBrands : 'Brand - Babyhug Products',
+        titleAllenBrands : 'Brand - Allen Solly Junior Products',
+        titleKookieBrands : 'Brand - Kookie Kids Products',
+        titleBibaBrands : 'Brand - Biba Products',
+        kookieResultBrands1 : 'Full Sleeves Top Cherry - Pink',
+        kookieResultBrands2 : 'Little Girls Mr. Panda Shirt',
+        kookieResultBrands3 : 'Cotton Mull Embroidered Dress'
 
 
     },
@@ -133,7 +154,18 @@ module.exports = {
         resultCategory2 : ':nth-child(4) > .product-image-wrapper > .single-products > .productinfo > p',
         resultCategory3 : ':nth-child(5) > .product-image-wrapper > .single-products > .productinfo > p',
         fieldManCategory : ':nth-child(2) > .panel-heading > .panel-title',
-        fieldSubManCategory : '#Men > .panel-body > ul > :nth-child(2) > a'
+        fieldSubManCategory : '#Men > .panel-body > ul > :nth-child(2) > a',
+
+        //brands product
+        fieldSideMenuBrands : '.brands_products > h2',
+        fieldPoloBrands : '.brands-name > .nav > :nth-child(1) > a',
+        fieldHmBrands : '.brands-name > .nav > :nth-child(2) > a',
+        fieldMadameBrands : '.brands-name > .nav > :nth-child(3) > a',
+        fieldMastBrands : '.brands-name > .nav > :nth-child(4) > a',
+        fieldBabyBrands : '.brands-name > .nav > :nth-child(5) > a',
+        fieldAllenBrands : '.brands-name > .nav > :nth-child(6) > a',
+        fieldKookieBrands : '.brands-name > .nav > :nth-child(7) > a',
+        fieldBibaBrands : '.brands-name > .nav > :nth-child(8) > a'
         
 
 
