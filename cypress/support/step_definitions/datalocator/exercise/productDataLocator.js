@@ -89,6 +89,13 @@ module.exports = {
         qtyProduct33 : '1',
         totalProduct33 : 'Rs. 799',
 
+        //write review
+        textWriteReview : 'Write Your Review',
+        textNameReview : 'try try yo',
+        textEmailReview : 'email@review.com',
+        textboxReview : 'This is my review, you can read my review at here',
+        successReview : 'Thank you for your review.'
+
 
     },
 
@@ -179,7 +186,13 @@ module.exports = {
         cartProductQty33 : '#product-33 > .cart_quantity > .disabled',
         cartProductTotal33 : '#product-33 > .cart_total > .cart_total_price',
         
-
+        //write review
+        fieldTextWriteReview : '.active > a',
+        fieldTextNameReview : '#name',
+        fieldTextEmailReview : '#email',
+        fieldTextboxReview : '#review',
+        buttonReview : '#button-review',
+        alertSuccessReview : '.col-md-12 > .alert-success',
 
     }
 }

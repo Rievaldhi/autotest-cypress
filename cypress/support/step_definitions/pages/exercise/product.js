@@ -396,6 +396,35 @@ class product {
         .should('have.text', dataLocator.dataId.totalProduct33)
     }
 
+    async verifTitleWriteReview(textWriteReview){
+        cy.get(dataLocator.locatorId.fieldTextWriteReview)
+        .should('have.text', textWriteReview)
+    }
+
+    async typeNameReview(textNameReview){
+        cy.get(dataLocator.locatorId.fieldTextNameReview)
+        .type(textNameReview)
+    }
+
+    async typeEmailReview(textEmailReview){
+        cy.get(dataLocator.locatorId.fieldTextEmailReview)
+        .type(textEmailReview)
+    }
+
+    async typeTextboxReview(textboxReview){
+        cy.get(dataLocator.locatorId.fieldTextboxReview)
+        .type(textboxReview)
+    }
+
+    async clickSubmitReview(){
+        cy.get(dataLocator.locatorId.buttonReview).click()
+    }
+
+    async verifAlertSuccessReview(){
+        cy.get(dataLocator.locatorId.alertSuccessReview)
+        .contains(dataLocator.dataId.successReview)
+    }
+
 }
 
 module.exports = product

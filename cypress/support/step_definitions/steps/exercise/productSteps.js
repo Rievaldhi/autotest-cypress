@@ -239,3 +239,21 @@ When ('User Click Add to Cart For Product Id 33',()=>{
 Then ('Verify Product Id 33 Should be Added to Cart',()=>{
     callProduct.verifProduct33Added()
 })
+
+Then ('Verify Write Your Review is visible',()=>{
+    callProduct.verifTitleWriteReview(dataLocator.dataId.textWriteReview)
+})
+
+When ('User Enter name and email and review',()=>{
+    callProduct.typeNameReview(dataLocator.dataId.textNameReview)
+    callProduct.typeEmailReview(dataLocator.dataId.textEmailReview)
+    callProduct.typeTextboxReview(dataLocator.dataId.textboxReview)
+})
+
+When ('User Click Button Submit Review',()=>{
+    callProduct.clickSubmitReview()
+})
+
+Then ('Verify success message Thank you for your review',()=>{
+    callProduct.verifAlertSuccessReview()
+})
