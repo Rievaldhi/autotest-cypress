@@ -231,3 +231,11 @@ When ('User Cilck on Kookie Brands',()=>{
 Then ('Verify the Result From Kookie Category',()=>{
     callProduct.verifKookieBrands()
 })
+
+When ('User Click Add to Cart For Product Id 33',()=>{
+    callProduct.clickAddProduct33()
+})
+
+Then ('Verify Product Id 33 Should be Added to Cart',()=>{
+    callProduct.verifProduct33Added()
+})

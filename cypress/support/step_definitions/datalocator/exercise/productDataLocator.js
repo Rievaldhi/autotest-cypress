@@ -81,7 +81,13 @@ module.exports = {
         titleBibaBrands : 'Brand - Biba Products',
         kookieResultBrands1 : 'Full Sleeves Top Cherry - Pink',
         kookieResultBrands2 : 'Little Girls Mr. Panda Shirt',
-        kookieResultBrands3 : 'Cotton Mull Embroidered Dress'
+        kookieResultBrands3 : 'Cotton Mull Embroidered Dress',
+
+        // search product and add to cart then view cart
+        productName33 : 'Soft Stretch Jeans',
+        priceProduct33 : 'Rs. 799',
+        qtyProduct33 : '1',
+        totalProduct33 : 'Rs. 799',
 
 
     },
@@ -165,7 +171,13 @@ module.exports = {
         fieldBabyBrands : '.brands-name > .nav > :nth-child(5) > a',
         fieldAllenBrands : '.brands-name > .nav > :nth-child(6) > a',
         fieldKookieBrands : '.brands-name > .nav > :nth-child(7) > a',
-        fieldBibaBrands : '.brands-name > .nav > :nth-child(8) > a'
+        fieldBibaBrands : '.brands-name > .nav > :nth-child(8) > a',
+
+        // search product and add to cart then view cart
+        cartProductName33 : '#product-33 > .cart_description > h4 > a',
+        cartProductPrice33 : '#product-33 > .cart_price > p',
+        cartProductQty33 : '#product-33 > .cart_quantity > .disabled',
+        cartProductTotal33 : '#product-33 > .cart_total > .cart_total_price',
         
 
 

@@ -381,6 +381,21 @@ class product {
         .contains(dataLocator.dataId.kookieResultBrands3)
     }
 
+    async clickAddProduct33(){
+        cy.get(dataLocator.locatorId.linkTextAddProduct1).click()
+    }
+
+    async verifProduct33Added(){
+        cy.get(dataLocator.locatorId.cartProductName33)
+        .should('have.text', dataLocator.dataId.productName33)
+        cy.get(dataLocator.locatorId.cartProductPrice33)
+        .should('have.text', dataLocator.dataId.priceProduct33)
+        cy.get(dataLocator.locatorId.cartProductQty33)
+        .should('have.text', dataLocator.dataId.qtyProduct33)
+        cy.get(dataLocator.locatorId.cartProductTotal33)
+        .should('have.text', dataLocator.dataId.totalProduct33)
+    }
+
 }
 
 module.exports = product
