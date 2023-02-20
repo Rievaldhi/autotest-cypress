@@ -257,3 +257,19 @@ When ('User Click Button Submit Review',()=>{
 Then ('Verify success message Thank you for your review',()=>{
     callProduct.verifAlertSuccessReview()
 })
+
+When ('User Scroll to bottom of page at Recommend Items',()=>{
+    callProduct.scrollToRecommendItems()
+})
+
+Then ('Verify RECOMMENDED ITEMS are visible',()=>{
+    callProduct.verifTitleRecommendItems(dataLocator.dataId.titleRecommend)
+})
+
+When ('User select first product from recommend items',()=>{
+    callProduct.selectRecommendItems1()
+})
+
+When ('User select second product from recommend items',()=>{
+    callProduct.selectRecommendItems2()
+})

@@ -425,6 +425,34 @@ class product {
         .contains(dataLocator.dataId.successReview)
     }
 
+    async scrollToRecommendItems(){
+        cy.get(dataLocator.locatorId.textTitleRecommend).scrollIntoView()
+    }
+
+    async verifTitleRecommendItems(titleRecommend){
+        cy.get(dataLocator.locatorId.textTitleRecommend)
+        .should('have.text', titleRecommend)
+    }
+
+    async selectRecommendItems1(){
+        
+        
+        cy.get(dataLocator.locatorId.carouselToLeft).click()
+        cy.get(dataLocator.locatorId.firstNameItemRecommend).should('be.visible')
+        cy.get(dataLocator.locatorId.firstNameItemRecommend1)
+        .contains(dataLocator.dataId.productName)
+        cy.get(dataLocator.locatorId.carouselSection).clock()
+        cy.get(dataLocator.locatorId.firstButtonAddCart).click()
+    }
+
+    async selectRecommendItems2(){
+
+        cy.get(dataLocator.locatorId.secondNameItemRecommend)
+        .contains(dataLocator.dataId.productName2)
+        cy.get(dataLocator.locatorId.secondButtonAddCart).click()
+    }
+
+
 }
 
 module.exports = product

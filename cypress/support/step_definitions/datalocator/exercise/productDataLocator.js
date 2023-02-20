@@ -94,7 +94,11 @@ module.exports = {
         textNameReview : 'try try yo',
         textEmailReview : 'email@review.com',
         textboxReview : 'This is my review, you can read my review at here',
-        successReview : 'Thank you for your review.'
+        successReview : 'Thank you for your review.',
+
+        // Add product from recommend items
+        titleRecommend : 'recommended items'
+
 
 
     },
@@ -193,6 +197,22 @@ module.exports = {
         fieldTextboxReview : '#review',
         buttonReview : '#button-review',
         alertSuccessReview : '.col-md-12 > .alert-success',
+
+        // Add product from recommend items
+        // need more attention to prevent flaky test at this case
+        carouselSection : '#recommended-item-carousel',
+        textTitleRecommend : '.recommended_items > .title',
+        carouselToLeft : '#recommended-item-carousel > .right > .fa',
+        firstImgItemRecommend : 'a[href*="get_product_picture/1"]',
+        firstNameItemRecommend : '.active > :nth-child(3) > .product-image-wrapper > .single-products > .productinfo > p',
+        firstNameItemRecommend1 : '.next > :nth-child(1) > .product-image-wrapper > .single-products > .productinfo > p',
+        firstButtonAddCart : '.next > :nth-child(1) > .product-image-wrapper > .single-products > .productinfo > .btn',
+        secondNameItemRecommend : '.active > :nth-child(2) > .product-image-wrapper > .single-products > .productinfo > p',
+        secondButtonAddCart : '.active > :nth-child(2) > .product-image-wrapper > .single-products > .productinfo > .btn',
+        thirdNameItemRecommend : '.active > :nth-child(3) > .product-image-wrapper > .single-products > .productinfo > p',
+        thirdButtonAddCart : '.active > :nth-child(3) > .product-image-wrapper > .single-products > .productinfo > .btn',
+        
+
 
     }
 }
