@@ -6,7 +6,7 @@
   "scripts": {
     "cypress:open": "cypress open",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "reportapi" : "cypress run --reporter cypress-mochawesome-reporter --spec"
+    "reportapi": "cypress run --reporter cypress-mochawesome-reporter --spec"
   },
   "repository": {
     "type": "git",
@@ -23,10 +23,16 @@
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
     "@deepakvishwakarma/cucumber-json-formatter": "^0.0.3",
     "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-downloadfile": "^1.2.3",
     "cypress-file-upload": "^5.0.8",
     "cypress-mochawesome-reporter": "^3.2.3",
     "mochawesome-merge": "^4.2.2",
     "multiple-cucumber-html-reporter": "^3.1.0"
+  },
+  "browser": {
+    "fs": false,
+    "os": false,
+    "path": false
   },
   "dependencies": {
     "cucumber-json-report-formatter": "^0.1.4",
@@ -34,7 +40,7 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
-    "stepDefinitions": "cypress/support/step_definitions/**/*", 
+    "stepDefinitions": "cypress/support/step_definitions/**/*",
     "cucumberJson": {
       "generate": true,
       "outputFolder": "cypress/reports/cucumber",

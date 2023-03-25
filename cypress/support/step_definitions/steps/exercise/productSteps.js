@@ -141,6 +141,11 @@ Then ('Verify User Directed to Payment Success Page',()=>{
 
 When ('User Click Download Invoice Button',()=>{
     callProduct.clickDownloadInvoice()
+    callProduct.verifyDownloadedInvoice()
+})
+
+Then ('System will auto delete the file after downloaded the invoice',()=>{
+    callProduct.deleteInvoiceFile()
 })
 
 When ('User Click Continue Button in Order Placed Page',()=>{

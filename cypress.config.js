@@ -2,6 +2,7 @@ const { defineConfig } = require("cypress");
 const createBundler = require("@bahmutov/cypress-esbuild-preprocessor");
 const addCucumberPreprocessorPlugin = require("@badeball/cypress-cucumber-preprocessor").addCucumberPreprocessorPlugin;
 const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
+const {downloadFile} = require('cypress-downloadfile/lib/addPlugin');
 module.exports = defineConfig({
   reporter: 'multiple-cucumber-html-reporter',
   reporterOptions: {
@@ -26,7 +27,7 @@ module.exports = defineConfig({
       const bundler = createBundler({
         plugins: [createEsbuildPlugin(config)],
       });
-
+    on('task', {downloadFile});
     on("file:preprocessor", bundler);
     await addCucumberPreprocessorPlugin(on, config);
 

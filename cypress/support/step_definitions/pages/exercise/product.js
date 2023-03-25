@@ -217,9 +217,23 @@ class product {
 
     async clickDownloadInvoice(){
         cy.get(dataLocator.locatorId.buttonDownloadInvoice)
-        .should('have.text', dataLocator.dataId.textDownloadInvoice).click().wait(500)
-        .readFile('cypress/downloads/invoice.txt').should('exist')
+        .should('have.text', dataLocator.dataId.textDownloadInvoice)
+        // cy.request({
+        //     url: 'https://automationexercise.com/download_invoice/900',
+        //     encoding: 'binary',
+        //   }).then((response) => {
+        //     cy.writeFile('C:/Users/valre/Documents/autotest-cypress/downloads/invoice.txt', response.body, 'binary')
+        //   })
+        cy.downloadFile('https://automationexercise.com/download_invoice/900', 'cypress/downloads', 'invoice.txt')
     }
+
+    async verifyDownloadedInvoice(){
+        cy.readFile('C:/Users/valre/Documents/autotest-cypress/downloads/invoice.txt')
+    }
+
+    // async deleteInvoiceFile(){
+    //     fs.remove('C:/Users/valre/Documents/autotest-cypress/downloads/invoice.txt')
+    // }
 
     async clickButtonContinueOrderConfirmed(){
         cy.get(dataLocator.locatorId.buttonContinueOrderConfirmed).click()

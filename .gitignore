@@ -9,3 +9,4 @@ mochawesome-report/assets/*
 cypress/videos
 cucumber-messages.ndjson
 cypress/fixtures/assets
+downloads
