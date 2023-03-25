@@ -28,3 +28,12 @@ When ('User click link text cart',()=>{
 Then ('Verify User Already in Cart Page', ()=>{
     callHome.verifCartPage(dataLocator.dataId.textCartPage)
 })
+
+When ('User Click on arrow at bottom right side to move upward',()=>{
+    callHome.clickScrollUp()
+})
+
+Then ('Verify that page is scrolled up and Full Fledged practice website for Automation Engineers text is visible on screen',()=>{
+    callHome.verifTopSection(dataLocator.dataId.textTopSection)
+})
+

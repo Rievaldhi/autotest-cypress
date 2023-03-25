@@ -8,7 +8,9 @@ module.exports = {
 
         //for subscribe in cart page
         textCartPage : 'Shopping Cart',
-        textCart : ' Cart'
+        textCart : ' Cart',
+
+        textTopSection : 'Full-Fledged practice website for Automation Engineers'
 
     },
 
@@ -22,7 +24,12 @@ module.exports = {
 
         //for subscribe in cart page
         fieldCartPage : '.active',
-        linkTextCart : '.shop-menu > .nav > :nth-child(3) > a'
+        linkTextCart : '.shop-menu > .nav > :nth-child(3) > a',
+
+        //scroll button
+        buttonScrollUp : '#scrollUp',
+        topSection : '.active > :nth-child(1) > h2'
+
 
 
 

@@ -34,6 +34,17 @@ class home {
         cy.get(dataLocator.locatorId.fieldCartPage)
         .should('have.text', textCartPage)
     }
+
+    async clickScrollUp(){
+        cy.get(dataLocator.locatorId.buttonScrollUp).click()
+        .wait(800)
+    }
+
+    async verifTopSection(textTopSection){
+        cy.get(dataLocator.locatorId.topSection)
+        .wait(800)
+        .should('have.text', textTopSection)
+    }
 }
 
 module.exports = home
