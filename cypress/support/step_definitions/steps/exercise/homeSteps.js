@@ -37,3 +37,7 @@ Then ('Verify that page is scrolled up and Full Fledged practice website for Aut
     callHome.verifTopSection(dataLocator.dataId.textTopSection)
 })
 
+When ('User scroll up to header section',()=>{
+    callHome.scrollToHeader()
+})
+

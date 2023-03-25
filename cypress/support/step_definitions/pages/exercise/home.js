@@ -45,6 +45,10 @@ class home {
         .wait(800)
         .should('have.text', textTopSection)
     }
+
+    async scrollToHeader(){
+        cy.get(dataLocator.locatorId.topSection).scrollIntoView()
+    }
 }
 
 module.exports = home
