@@ -23,5 +23,6 @@ import 'cypress-mochawesome-reporter/register';
 // npx cypress run --spec (specific path of test case)
 // npx cypress run --headed --spec (specific path of test case) --browser chrome
 // npx mochawesome-merge "relativepath" > yournamefile.json
-// npx marge yournamefile.json
 // USE IT FOR RUN REPORTER HTML MOCHAWASOME ------ npm run reportapi (your specific path of test case)
+//npm run reportapi cypress\e2e\features\exercise\TC04-logout.feature  <--- example command
+// npx marge yournamefile.json
