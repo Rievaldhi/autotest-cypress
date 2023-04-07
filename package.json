@@ -6,7 +6,8 @@
   "scripts": {
     "cypress:open": "cypress open",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "reportapi": "cypress run --reporter cypress-mochawesome-reporter --spec"
+    "reportapi": "cypress run --reporter cypress-mochawesome-reporter --spec",
+    "3apiTest" : "npx cypress run --headless --spec 'cypress/e2e/apitest/3apiTest.cy.js'"
   },
   "repository": {
     "type": "git",

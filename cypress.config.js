@@ -4,7 +4,8 @@ const addCucumberPreprocessorPlugin = require("@badeball/cypress-cucumber-prepro
 const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
 const {downloadFile} = require('cypress-downloadfile/lib/addPlugin');
 module.exports = defineConfig({
-  reporter: 'multiple-cucumber-html-reporter',
+  // reporter: 'multiple-cucumber-html-reporter',
+  reporter: 'cypress-mochawesome-reporter',
   reporterOptions: {
     charts: false,
     html: true,
