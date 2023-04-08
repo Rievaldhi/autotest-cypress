@@ -13,4 +13,3 @@ cypress/fixtures/assets
 downloads
 cypress/reports*
 cypress/reports/html/.jsons/*.json
-mochawesome-report/pass_3apiTest-report.html
