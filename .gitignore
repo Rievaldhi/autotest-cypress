@@ -5,8 +5,9 @@ cypress/e2e/1-getting-started
 cypress/e2e/2-advanced-examples
 node_modules
 .prettierrc
-mochawesome-report/assets/*
+mochawesome-report/*
 cypress/videos
 cucumber-messages.ndjson
 cypress/fixtures/assets
 downloads
+cypress/reports/*
