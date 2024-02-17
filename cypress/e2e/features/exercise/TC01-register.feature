@@ -15,5 +15,5 @@ Feature: Register User
         When I already fill in the sign up form and click create
         Then I Validate Account Already Created
         Then I Already Login and See My Username
-        # When I will delete my account
-        # Then I Validate My Account Already Deleted
+        When I will delete my account
+        Then I Validate My Account Already Deleted

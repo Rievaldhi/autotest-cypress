@@ -28,6 +28,7 @@ module.exports = {
         textFailedSignupWarning : 'Email Address already exist!' ,
 
         //login logout proccess
+        inputValidEmail : 'asdzzz-01@asdzzz.com',
         textLogin : 'Login to your account',
         invalidEmail : 'invalid@email.com',
         textFailedLoginWarning : 'Your email or password is incorrect!',

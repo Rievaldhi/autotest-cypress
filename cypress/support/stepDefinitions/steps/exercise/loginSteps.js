@@ -8,7 +8,7 @@ When ('I directed to new page the login form should be visible', ()=>{
     callLogin.verifLogin(dataLocator.dataId.textLogin)
 })
 When ('I input valid email address',()=>{
-    callLogin.typeEmailLogin(dataLocator.dataId.inputEmailSignup)
+    callLogin.typeEmailLogin(dataLocator.dataId.inputValidEmail)
 })
 
 When ('And I input valid password',()=>{
