@@ -19,7 +19,7 @@ import './commands';
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
 
-import 'cypress-mochawesome-reporter/register';
+// import 'cypress-mochawesome-reporter/register';
 // npx cypress run --spec (specific path of test case)
 // npx cypress run --headed --spec (specific path of test case) --browser chrome
 // npx mochawesome-merge "relativepath" > yournamefile.json

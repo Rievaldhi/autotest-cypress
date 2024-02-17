@@ -7,7 +7,7 @@
     "cypress:open": "cypress open",
     "test": "echo \"Error: no test specified\" && exit 1",
     "reportapi": "cypress run --reporter cypress-mochawesome-reporter --spec",
-    "3apiTest" : "npx cypress run --headless --spec 'cypress/e2e/apitest/3apiTest.cy.js'"
+    "3apiTest": "npx cypress run --headless --spec 'cypress/e2e/apitest/3apiTest.cy.js'"
   },
   "repository": {
     "type": "git",
@@ -23,12 +23,13 @@
     "@badeball/cypress-cucumber-preprocessor": "^15.1.2",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
     "@deepakvishwakarma/cucumber-json-formatter": "^0.0.3",
+    "cucumber-html-reporter": "^6.0.0",
     "cypress-cucumber-preprocessor": "^4.3.1",
     "cypress-downloadfile": "^1.2.3",
     "cypress-file-upload": "^5.0.8",
     "cypress-mochawesome-reporter": "^3.2.3",
     "mochawesome-merge": "^4.2.2",
-    "multiple-cucumber-html-reporter": "^3.1.0"
+    "multiple-cucumber-html-reporter": "^3.3.0"
   },
   "browser": {
     "fs": false,
@@ -40,11 +41,14 @@
     "prettier": "^2.8.3"
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": false,
-    "stepDefinitions": "cypress/support/step_definitions/**/*",
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/support/stepDefinitions/steps/exercise/*.js",
+    "json": {
+      "enabled": true
+    },
     "cucumberJson": {
       "generate": true,
-      "outputFolder": "cypress/reports/cucumber",
+      "outputFolder": "cypress/cucumber-json",
       "filePrefix": "",
       "fileSuffix": ".cucumber"
     }

@@ -1,17 +1,16 @@
 {
-    "stepDefinitions": [
-      "cypress/support/step_definitions/**/*"
-    ],
-
     "json": {
       "enabled": true,
-      "output" : "jsonlogs/log.json",
-      "formater" : "cucumber-json-formatter.exe"
+      "output" : "cypress/cucumber-json/log.json",
+      "formater" : "cucumber-json-formatter"
     },
     "messages" : {
       "enabled" : true,
-      "output" : "jsonlogs/messages.json"
-    }
+      "output" : "jsonlogs/messages.ndjson"
+    },
+    "stepDefinitions": [
+      "cypress/support/stepDefinitions/steps/exercise/*.js"
+    ]
 
 }
 
